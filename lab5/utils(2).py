@@ -12,16 +12,14 @@ class CorpusReader:
 
         self.word2id = dict()
         self.id2word = dict()
-        self.words = []
         self.token_count = 0
         self.word_frequency = dict()
 
         self.lang = lang
         self.inputFileName = inputFileName
         self.read_words(min_count)
-        self.vocab_size = len(self.word2id)
-        self.initTableNegatives()
-        self.initTableDiscards()
+        # self.initTableNegatives()
+        # self.initTableDiscards()
 
     def read_words(self, min_count):
         word_frequency = dict()
@@ -36,7 +34,7 @@ class CorpusReader:
                     word_frequency[word] = word_frequency.get(word, 0) + 1
                     if self.token_count % 1000000 == 0:
                         print("Read " + str(int(self.token_count / 1000000)) + "M words.")
-        
+
         wid = 0
         for w, c in sorted(word_frequency.items(), key=lambda x: x[1], reverse=True):
             if c < min_count: # filter out low frequency words
@@ -44,7 +42,6 @@ class CorpusReader:
             self.word2id[w] = wid
             self.id2word[wid] = w
             self.word_frequency[wid] = c
-            self.words.append(w)
             wid += 1
         print("Total vocabulary: " + str(len(self.word2id)))
 
