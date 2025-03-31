@@ -39,8 +39,8 @@ MIN_WORD_FREQ = 2
 
 # File paths
 DATA_PATH = '/home/stu_12310401/nlp/SUSTech-NLP25/Ass3/Harry_Potter_all_books_preprocessed.txt'
-MODEL_SAVE_PATH = '/home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_model.pth'
-VISUALIZATION_PATH = '/home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_training.png'
+MODEL_SAVE_PATH = '/home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_model_pretrained200.pth'
+VISUALIZATION_PATH = '/home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_training_pretrained200.png'
 
 
 # 下载NLTK的tokenizer数据
