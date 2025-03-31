@@ -1,0 +1,139 @@
+Using device: cuda
+Loading and preprocessing data...
+Vocabulary size: 18365
+Starting training...
+Epoch 1/10
+
+Training:   0%|          | 1/15552 [00:01<8:20:05,  1.93s/it]
+Training: 100%|██████████| 15552/15552 [06:00<00:00, 43.16it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.68it/s]
+Train Loss: 5.0981, Validation Loss: 4.1567
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 118.31it/s]
+Train Loss: 5.0981, Test Loss: 4.1523
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou Harry was terrified there was a colossal ghost from the proceedings Hagrid blinked .They backed purposefully onto the grass .Harry looked out of his room .Buckbeak closed the door behind
+
+Epoch 2/10
+
+Training: 100%|██████████| 15552/15552 [05:57<00:00, 43.55it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.59it/s]
+Train Loss: 4.2603, Validation Loss: 3.7021
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.96it/s]
+Train Loss: 4.2603, Test Loss: 3.6982
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou plenty of second horrible seven hundred ? Uncle Vernon was sitting in a portrait hole with a soft deal of more slugs whose wine were echoed at Sirius .Harrys heart
+
+Epoch 3/10
+
+Training: 100%|██████████| 15552/15552 [05:58<00:00, 43.44it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.76it/s]
+Train Loss: 4.0203, Validation Loss: 3.4673
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.85it/s]
+Train Loss: 4.0203, Test Loss: 3.4614
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou <UNK> nearby and the <UNK> red and Mrs Weasley conjured her hand back to allow her to blast off all her books and she drifted off .Im sorry by Oliver
+
+Epoch 4/10
+
+Training: 100%|██████████| 15552/15552 [05:57<00:00, 43.49it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.85it/s]
+Train Loss: 3.8827, Validation Loss: 3.3138
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 118.54it/s]
+Train Loss: 3.8827, Test Loss: 3.3076
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou on Ravenclaw said Harry suddenly the sight of the boggart wiping her face in front of him .Ron and Hermione beamed at each others eyes .Mr Bagman <UNK> threatened to
+
+Epoch 5/10
+
+Training: 100%|██████████| 15552/15552 [06:00<00:00, 43.18it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 118.49it/s]
+Train Loss: 3.7889, Validation Loss: 3.2025
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.93it/s]
+Train Loss: 3.7889, Test Loss: 3.1963
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou green <UNK> had been squeezed into view so that their luggage fitted and to remain yet again at the entrances .Extraordinary for life and <UNK> .And the sky in their
+
+Epoch 6/10
+
+Training: 100%|██████████| 15552/15552 [05:58<00:00, 43.42it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.63it/s]
+Train Loss: 3.7192, Validation Loss: 3.1174
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 118.36it/s]
+Train Loss: 3.7192, Test Loss: 3.1120
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou were supported his school shelves and it was abruptly to leave the chamber every day was a sudden inch of the great inside he was hiding a few feet along
+
+Epoch 7/10
+
+Training: 100%|██████████| 15552/15552 [05:56<00:00, 43.67it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.25it/s]
+Train Loss: 3.6644, Validation Loss: 3.0505
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.70it/s]
+Train Loss: 3.6644, Test Loss: 3.0461
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou ! They the woman barely watched them move along the corridor .Good lord she cried from Professor Flitwick ! And there was a silence in a room with them .He
+
+Epoch 8/10
+
+Training: 100%|██████████| 15552/15552 [05:52<00:00, 44.09it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.71it/s]
+Train Loss: 3.6192, Validation Loss: 2.9938
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.93it/s]
+Train Loss: 3.6192, Test Loss: 2.9889
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou filled the place .All those who were walking outside the corridors the ingredients continued to lock their heads away .Percy was going to hurry up at the castle once last
+
+Epoch 9/10
+
+Training: 100%|██████████| 15552/15552 [05:51<00:00, 44.23it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 120.71it/s]
+Train Loss: 3.5827, Validation Loss: 2.9445
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 120.75it/s]
+Train Loss: 3.5827, Test Loss: 2.9400
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou and close in front of Aunt Petunia .Where is Harry I that ? said Aunt Petunia frowning .Hello Madam Bones .No said Harry .I dont like a see the boy
+
+Epoch 10/10
+
+Training: 100%|██████████| 15552/15552 [05:54<00:00, 43.90it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 120.31it/s]
+Train Loss: 3.5508, Validation Loss: 2.9050
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 120.62it/s]
+Train Loss: 3.5508, Test Loss: 2.9009
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou the best <UNK> <UNK> for the Wizarding community for which they have fallen or set off as long as they will have been to explain .Some kinds of spells might
+
+Training complete. Model saved to /home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_model-random200.pth
+Training visualization saved to /home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_training-random200.png
+
+Calculating final perplexity scores...
+
+Calculating Perplexity: 100%|██████████| 15552/15552 [02:08<00:00, 120.68it/s]
+
+Calculating Perplexity: 100%|██████████| 864/864 [00:07<00:00, 120.79it/s]
+
+Final Perplexity Scores:
+Train Perplexity: 17.71
+Test Perplexity: 18.19
+Final Generated Text Sample:
+Harry Potter understand ? Harry looked around the <UNK> hands in the middle of the Horcrux and started looking around at the castle the lake .Harry could hear footsteps coming nearer and nearer again hed just worked out on the floor .Harry fell next to the raised feeling of horror was turning off every step .Harry Potter ! Wormtail was clambering down his chair toward the castle leaving the edge of the lake .There was a loud bang and Harry saw a bald patch of light the PutOuter of the stone doors into the corridors .The crowd shrieked and jeered in equal measure .Along the corridors to discuss the hearing too .It was the first time they set off outside the Great Hall of Prophecy that they were currently being <UNK> of their favorite Ministers minds for a wizard in his friendly to the <UNK> year for a while in the wizarding world and the Burrow had been demolished so far from the Ministry of Magic for instance he was the first time it was very much to believe whether he had taken the diadem of a boy all he could say that he had not asked the elf with him and

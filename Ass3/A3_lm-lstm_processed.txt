@@ -1,0 +1,139 @@
+Using device: cuda
+Loading and preprocessing data...
+Vocabulary size: 18365
+Starting training...
+Epoch 1/10
+
+Training:   0%|          | 1/15552 [00:01<7:24:42,  1.72s/it]
+Training: 100%|██████████| 15552/15552 [05:48<00:00, 44.62it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.16it/s]
+Train Loss: 5.1369, Validation Loss: 4.2395
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.72it/s]
+Train Loss: 5.1369, Test Loss: 4.2369
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou Harry was terrified there was a colossal cat from the kitchen .It blinked the reflected ShortSnout something giant and scarlet looked out of thin air .He could tell that was
+
+Epoch 2/10
+
+Training: 100%|██████████| 15552/15552 [05:46<00:00, 44.91it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.44it/s]
+Train Loss: 4.3326, Validation Loss: 3.8128
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.89it/s]
+Train Loss: 4.3326, Test Loss: 3.8081
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou plenty of second horrible studying and failing Uncle Vernon was sitting in a portrait hole containing they packed down the chant of London their own family to Sirius to tell
+
+Epoch 3/10
+
+Training: 100%|██████████| 15552/15552 [05:45<00:00, 44.98it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.73it/s]
+Train Loss: 4.1028, Validation Loss: 3.5897
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 123.06it/s]
+Train Loss: 4.1028, Test Loss: 3.5848
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou <UNK> it is the <UNK> red dragon I placed it down in an air and as we will do all our books to have a nice one .I think we
+
+Epoch 4/10
+
+Training: 100%|██████████| 15552/15552 [05:43<00:00, 45.27it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.30it/s]
+Train Loss: 3.9711, Validation Loss: 3.4459
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.81it/s]
+Train Loss: 3.9711, Test Loss: 3.4419
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou on the fabled place that the village set yet away yet he threw a book from his cauldron and allowed them to tell the news said Dumbledore <UNK> miscarriage last
+
+Epoch 5/10
+
+Training: 100%|██████████| 15552/15552 [05:44<00:00, 45.14it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.42it/s]
+Train Loss: 3.8826, Validation Loss: 3.3414
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.99it/s]
+Train Loss: 3.8826, Test Loss: 3.3373
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou been <UNK> from the other end of the holidays passed Harry on toast to tell her again stopped the news that nobody was studying for some details about this .They
+
+Epoch 6/10
+
+Training: 100%|██████████| 15552/15552 [05:44<00:00, 45.12it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.44it/s]
+Train Loss: 3.8171, Validation Loss: 3.2645
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.90it/s]
+Train Loss: 3.8171, Test Loss: 3.2598
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou Death Eaters or other of course at least going to rip the Black turn up .Yeah I bet I wouldnt like me said Lupin very much at the end of
+
+Epoch 7/10
+
+Training: 100%|██████████| 15552/15552 [05:47<00:00, 44.79it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.15it/s]
+Train Loss: 3.7661, Validation Loss: 3.1997
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.67it/s]
+Train Loss: 3.7661, Test Loss: 3.1959
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou ! They the woman barely watched him as with a horrible earsplitting wave .But it was wrong coming ! he said .No no like a nighttime stroll with you .He
+
+Epoch 8/10
+
+Training: 100%|██████████| 15552/15552 [05:45<00:00, 44.97it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.45it/s]
+Train Loss: 3.7252, Validation Loss: 3.1467
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.86it/s]
+Train Loss: 3.7252, Test Loss: 3.1422
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou yes .My answer will be Miss Granger ! How did you think you please see you in the entrance hall ? Harry asked .I was talking to entering the last
+
+Epoch 9/10
+
+Training: 100%|██████████| 15552/15552 [05:45<00:00, 45.08it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.50it/s]
+Train Loss: 3.6910, Validation Loss: 3.1044
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 121.72it/s]
+Train Loss: 3.6910, Test Loss: 3.1003
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou and close in their seats yes said Dumbledore indeed Harry I shall wait for my bedroom while that Madam hand and your father has been Petrified by Voldemort the Dark
+
+Epoch 10/10
+
+Training: 100%|██████████| 15552/15552 [05:46<00:00, 44.88it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 121.73it/s]
+Train Loss: 3.6616, Validation Loss: 3.0675
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 122.22it/s]
+Train Loss: 3.6616, Test Loss: 3.0625
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou the next <UNK> he grabbed the Marauders Map and sent it about his wizards beneath a Hogwarts vault without Slughorn who was still to be used by other teachers and
+
+Training complete. Model saved to /home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_model.pth
+Training visualization saved to /home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_training.png
+
+Calculating final perplexity scores...
+
+Calculating Perplexity: 100%|██████████| 15552/15552 [02:07<00:00, 121.61it/s]
+
+Calculating Perplexity: 100%|██████████| 864/864 [00:07<00:00, 118.42it/s]
+
+Final Perplexity Scores:
+Train Perplexity: 20.85
+Test Perplexity: 21.38
+Final Generated Text Sample:
+Harry Potter ! said Harry .She was making the same time with everyones just because he was only looking for the Snitch so much cause that he could not help himself and not even hed just gotten to a foot .At the end of the school vacation there was that the fifth years were wearing the Hogwarts champion .Well who were supposed to be going to be able to work around for the tournament ? Yet her hoping Hermione was waiting for where he would have been able to see his teammates and if she had not answer about the next few days to go .A few seconds later he too wanted to catch the Snitch they set off outside the locker rooms of Gryffindor Tower to save some food .The Slytherins were cutting their heads for a few minutes before starting to speak to Ernie Macmillan .He didnt seem to do not having to get it but at least he was stuck to the <UNK> of the Weasleys and the first time it was very important and everything for all he had had always been asked about all the conversation that he could not see of the Horntail with his head

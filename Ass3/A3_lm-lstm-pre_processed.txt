@@ -1,0 +1,142 @@
+Using device: cuda
+Loading and preprocessing data...
+Vocabulary size: 18365
+加载 GloVe 嵌入...
+在 GloVe 嵌入中找到 12789/18365 个词
+预训练嵌入加载成功
+Starting training...
+Epoch 1/10
+
+Training:   0%|          | 1/15552 [00:01<7:38:37,  1.77s/it]
+Training: 100%|██████████| 15552/15552 [05:54<00:00, 43.85it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.21it/s]
+Train Loss: 4.9209, Validation Loss: 4.0601
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.17it/s]
+Train Loss: 4.9209, Test Loss: 4.0564
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou <UNK> <UNK> .Harry inhaled that he was not them not to let him float out in circles around the scarlet rosette to the door causing a tree and hit a
+
+Epoch 2/10
+
+Training: 100%|██████████| 15552/15552 [05:54<00:00, 43.92it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.98it/s]
+Train Loss: 4.1550, Validation Loss: 3.6020
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 120.38it/s]
+Train Loss: 4.1550, Test Loss: 3.5984
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou throwing some weight horrible boiling spells through Uncle Vernons brain sitting in a scarlet bedroom with a soft jerk of his head to speak .Where are we going to tell
+
+Epoch 3/10
+
+Training: 100%|██████████| 15552/15552 [05:52<00:00, 44.16it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 120.19it/s]
+Train Loss: 3.9191, Validation Loss: 3.3586
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 118.15it/s]
+Train Loss: 3.9191, Test Loss: 3.3533
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou <UNK> TO GO ! Harry dived between Mrs Weasley .It was brightly as though eight landing had flash and all apart from the other Bludger hit Sirius and by the
+
+Epoch 4/10
+
+Training: 100%|██████████| 15552/15552 [05:57<00:00, 43.49it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.26it/s]
+Train Loss: 3.7854, Validation Loss: 3.1986
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.79it/s]
+Train Loss: 3.7854, Test Loss: 3.1930
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou and Sprouts and got George muttered Look yeah yet .And yet he threw a handful of red silver onion the scroll and tell the article said Dumbledore <UNK> the last
+
+Epoch 5/10
+
+Training: 100%|██████████| 15552/15552 [05:56<00:00, 43.68it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.12it/s]
+Train Loss: 3.6973, Validation Loss: 3.0881
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.41it/s]
+Train Loss: 3.6973, Test Loss: 3.0826
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou and <UNK> filled the windows as he glimpsed a newly erected podium and a swooning figure who stopped the fire supporting Mr Weasley loudly .Harry looked at the other two
+
+Epoch 6/10
+
+Training: 100%|██████████| 15552/15552 [05:57<00:00, 43.47it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.30it/s]
+Train Loss: 3.6336, Validation Loss: 3.0057
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 114.21it/s]
+Train Loss: 3.6336, Test Loss: 3.0005
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou were looking around .HAGRID ! he seized a Bludger from Crabbe and Black and pulled up a handful of massive old clothes and he was sitting at the table on
+
+Epoch 7/10
+
+Training: 100%|██████████| 15552/15552 [05:56<00:00, 43.65it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.56it/s]
+Train Loss: 3.5844, Validation Loss: 2.9439
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.39it/s]
+Train Loss: 3.5844, Test Loss: 2.9392
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou turned tail the woman barely watched him move along the corridor .Good concern she said with relish coming down to a spot of tea in Rons arm .At last she
+
+Epoch 8/10
+
+Training: 100%|██████████| 15552/15552 [05:57<00:00, 43.45it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 118.61it/s]
+Train Loss: 3.5453, Validation Loss: 2.8906
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 119.28it/s]
+Train Loss: 3.5453, Test Loss: 2.8855
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou using an answer .All those things he had saw this in the Order of them were picking their robes while Harrys trunk turned on and started to move forward and
+
+Epoch 9/10
+
+Training: 100%|██████████| 15552/15552 [05:57<00:00, 43.50it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.40it/s]
+Train Loss: 3.5130, Validation Loss: 2.8460
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 117.66it/s]
+Train Loss: 3.5130, Test Loss: 2.8412
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou and Dedalus was appearing beneath a heavy wand indeed Harry had that an advantage .The argument was that Madam Pomfreys voice did not know whether they was further the best
+
+Epoch 10/10
+
+Training: 100%|██████████| 15552/15552 [05:56<00:00, 43.57it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 118.41it/s]
+Train Loss: 3.4858, Validation Loss: 2.8097
+
+Evaluating: 100%|██████████| 864/864 [00:07<00:00, 118.53it/s]
+Train Loss: 3.4858, Test Loss: 2.8048
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou the skeletal <UNK> <UNK> Hagrid s face was pounding in his face .Harry .Here Harry said he and Hermione walked closer a little to the door into Harrys office and
+
+Training complete. Model saved to /home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_model.pth
+Training visualization saved to /home/stu_12310401/nlp/SUSTech-NLP25/Ass3/lstm_lm_training.png
+
+Calculating final perplexity scores...
+
+Calculating Perplexity: 100%|██████████| 15552/15552 [02:12<00:00, 117.06it/s]
+
+Calculating Perplexity: 100%|██████████| 864/864 [00:07<00:00, 119.62it/s]
+
+Final Perplexity Scores:
+Train Perplexity: 16.08
+Test Perplexity: 16.52
+Final Generated Text Sample:
+Harry Potter must know what it means .If he was in Azkaban .There was a bleak and forbidding air of the campsite .The lane curved to the field below <UNK> as usual as ever by the fact that Ravenclaw were only the only one who could see the large crowd of dementors in every direction .Harry was staring at the entrance of the oneeyed house and a skinny harassedlooking woman came scurrying around him .There were a few seconds before with a slight frown upon her face .You ave been brought with your toad for a week ! Harry and Hermione all turned to look at each other .How are you friends ? asked Harry curiously they set off outside an <UNK> corridor of a village of Little Whinging by an old tramp he remembered in his usual lesson .The end of the term <UNK> Harry had a very <UNK> call from the President of the new team forward to play Exploding Snap and Harry now joined in Jets of light flew from inside the ceiling their <UNK> black hooded figures moved around them .A hooded figure seemed all around him .See you later Al .Watch out for the sleeve of his
