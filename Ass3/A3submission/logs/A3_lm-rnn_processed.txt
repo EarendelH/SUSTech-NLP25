@@ -1,0 +1,112 @@
+Using device: cuda
+Loading and preprocessing data...
+Vocabulary size: 18365
+Starting training...
+Epoch 1/10
+
+Training:   0%|          | 1/15552 [00:01<7:28:09,  1.73s/it]
+Training: 100%|██████████| 15552/15552 [04:10<00:00, 61.98it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 160.94it/s]
+Train Loss: 4.9611, Validation Loss: 4.2171
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou Harry had ever heard of how much it was not to let him the outcome wasnt something creation before .Harry looked out but at the bottom of the box .Bathilda
+
+Epoch 2/10
+
+Training: 100%|██████████| 15552/15552 [04:10<00:00, 61.97it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 150.61it/s]
+Train Loss: 4.4772, Validation Loss: 3.9706
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou hats some rare horrible cold misty <UNK> Uncle Vernons head brought up a piece of parchment to the farthest from one of his wine by the time Sirius had been
+
+Epoch 3/10
+
+Training: 100%|██████████| 15552/15552 [04:10<00:00, 62.06it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 161.09it/s]
+Train Loss: 4.3334, Validation Loss: 3.8362
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou <UNK> it might be <UNK> red and Mrs Weasley were addressed brightly as though eight as Mrs Weasleys eyes all was a little older than an Sirius .I thought we
+
+Epoch 4/10
+
+Training: 100%|██████████| 15552/15552 [04:08<00:00, 62.46it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 158.96it/s]
+Train Loss: 4.2464, Validation Loss: 3.7520
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou on her the hand that the door set open with a large roll of parchment which was almost full as they were nudging the heavy perfume open <UNK> the last
+
+Epoch 5/10
+
+Training: 100%|██████████| 15552/15552 [04:13<00:00, 61.25it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 159.43it/s]
+Train Loss: 4.1846, Validation Loss: 3.6870
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou green <UNK> filled the windows of a large walnut body ever on their way toward the Magical Menagerie the news that nobody was studying for some reason for sure their
+
+Epoch 6/10
+
+Training: 100%|██████████| 15552/15552 [04:14<00:00, 61.00it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 158.89it/s]
+Train Loss: 4.1381, Validation Loss: 3.6362
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou Death Eaters were safely in course its hood Ron Black was having Black or blood was a while now had given me about those spiders and a great sadness on
+
+Epoch 7/10
+
+Training: 100%|██████████| 15552/15552 [04:10<00:00, 62.10it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 161.25it/s]
+Train Loss: 4.1005, Validation Loss: 3.6009
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou hands heads the black shape watched them around with a gleaming chestnut .The usual Bludger .and it coming ! And how we are like a foot in dress with the
+
+Epoch 8/10
+
+Training: 100%|██████████| 15552/15552 [04:11<00:00, 61.76it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 160.01it/s]
+Train Loss: 4.0697, Validation Loss: 3.5558
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou to the boys .All those and still had set their affairs into the Order see with that Quidditch robes by Harrys trunk .In the center of the table and noticed
+
+Epoch 9/10
+
+Training: 100%|██████████| 15552/15552 [04:11<00:00, 61.77it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 159.72it/s]
+Train Loss: 4.0430, Validation Loss: 3.5255
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou and a very old <UNK> car said Dumbledore as Harry moved back to the right Omnioculars and threw draw in their seats .Harry pulled off Hagrids cushions and the repaired
+
+Epoch 10/10
+
+Training: 100%|██████████| 15552/15552 [04:10<00:00, 62.04it/s]
+
+Evaluating: 100%|██████████| 864/864 [00:05<00:00, 159.38it/s]
+Train Loss: 4.0197, Validation Loss: 3.4993
+Generated Text Sample:
+THE BOY WHO LIVED Mr and Mrs Dursley of number fou the Ministry <UNK> <UNK> for the House Cup this year would have fallen off beneath a flower beds without no longer a <UNK> to explain .Some of Harrys brain might
+
+Training complete. Model saved to /home/stu_12310401/nlp/SUSTech-NLP25/Ass3/rnn_lm_model.pth
+Training visualization saved to /home/stu_12310401/nlp/SUSTech-NLP25/Ass3/rnn_lm_training.png
+Final Generated Text Sample:
+Harry Potter in your voice .She was making the time in question .Oh yeah said Harry .Flitwick started looking around at the other other side .Harry glanced at Ron .I see Harry and Hermione said Ron .I thought you were to patrol the corridors with the walls for their safety to was sure every time I have to do it with him .You have been arrest to the next day I have told you to get it to Hermione s office .Yeah said Hagrid unconcerned .Bu isnt it ? Hermione asked apprehensively .Yeah I see said Uncle Vernon though Harrys nostrils were starting to know what he was now doing too .It was natural to see what it was <UNK> to be taken aback .He had to look at Hermione with her own hand but something very interested in some decent day because they couldnt be overheard .He didnt feel much from not having to dreams but he was still with an unpleasant lurch Harry had never seen anyone forever except for which recoiled .He did not want to know how he couldnt kill his bare skin .He fumbled at his plate and stepped out of a door to open .He was
+
+Calculating final perplexity scores...
+
+Calculating Perplexity: 100%|██████████| 15552/15552 [01:37<00:00, 159.28it/s]
+
+Calculating Perplexity: 100%|██████████| 864/864 [00:05<00:00, 160.05it/s]
+
+Calculating Perplexity: 100%|██████████| 864/864 [00:05<00:00, 160.53it/s]
+
+Final Perplexity Scores:
+Train Perplexity: 32.20
+Validation Perplexity: 33.09
+Test Perplexity: 32.94
