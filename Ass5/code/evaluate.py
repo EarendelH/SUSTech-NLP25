@@ -11,7 +11,7 @@ from parse_utils import conll_reader
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--model', type=str, default='model.pt')
-argparser.add_argument('--data', type=str, default='data', help='path to data directory')
+argparser.add_argument('--data', type=str, default='../data', help='path to data directory')
 argparser.add_argument('--words_vocab', default='words_vocab.txt')
 argparser.add_argument('--pos_vocab', default='pos_vocab.txt')
 argparser.add_argument('--rel_vocab', default='rel_vocab.txt')

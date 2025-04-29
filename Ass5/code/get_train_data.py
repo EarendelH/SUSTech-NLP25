@@ -54,34 +54,115 @@ class FeatureExtractor(object):
         state: a State object, which is obtained from get_training_instances()
         Return: a numpy array of size 6, in which the first 3 elements are the IDs of the top 3 words on the stack, and the last 3 elements are the IDs of the top 3 words on the buffer
         """
-        rep = np.zeros(6)
-
+        repr = np.zeros(6)
+        unknown_word = []
         for i in range(3):
             ### START YOUR CODE ###
-            # TODO: Go through the top 3 words on stack
-            # If stack is empty, use <NULL> as the word; if stack contains <3 words, also fill with <NULL>
-            # If word is not in word_vocab, use <UNK> as the word
-            pass
-
-            # TODO: Go through the top 3 words on buffer, similar to the above
-            pass
+            if i < len(state.stack):
+                word_id = state.stack[-(i+1)]  
+                if word_id == 0:
+                    word = "<ROOT>"
+                else:
+                    word = words[word_id]
+                    if word is None:
+                        word = "<NULL>"
+                    else:
+                        word = word.lower()
+                        if word not in self.word_vocab:
+                            unknown_word.append([word,pos[word_id]])
+                            if pos[word_id] == "CD":
+                                word = "<CD>"
+                            elif pos[word_id] == "NNP":
+                                word = "<NNP>"
+                            else:
+                                word = "<UNK>"
+            else:
+                word = "<NULL>"
+            repr[i] = self.word_vocab[word]
+            if i < len(state.buffer):
+                word_id = state.buffer[-(i+1)]  
+                word = words[word_id]
+                if word is None:
+                    word = "<NULL>"
+                else:
+                    word = word.lower()
+                    if word not in self.word_vocab:
+                        unknown_word.append([word,pos[word_id]])
+                        if pos[word_id] == "CD":
+                            word = "<CD>"
+                        elif pos[word_id] == "NNP":
+                            word = "<NNP>"
+                        else:
+                            word = "<UNK>"
+            else:
+                word = "<NULL>"
+            repr[i+3] = self.word_vocab[word]
             ### END YOUR CODE ###
-
-        return rep
+        # print(f"Unknown words are {unknown_word}")
+        return repr
     
     def get_input_repr_wordpos(self, words, pos, state):
         """
         Return: a numpy array of size 12, in which the first 6 elements are the words IDs of the top 3 words on the stack plus the top 3 on the buffer; the last 6 elements are the POS IDs of the top 3 words on the stack plus the top 3 on the buffer
         """
-        rep = np.zeros(12)
+        repr = np.zeros(12)
 
         for i in range(3):
             ### START YOUR CODE ###
-            # TODO: Similar to get_input_repr_word(), but include self.pos_vocab in addition.
-            pass
+            if i < len(state.stack):
+                word_id = state.stack[-(i+1)]
+                if word_id == 0:
+                    word = "<ROOT>"
+                    tag = "<ROOT>"
+                else:
+                    word = words[word_id]
+                    if word is None:
+                        word = "<NULL>"
+                        tag = "<NULL>"
+                    else:
+                        word = word.lower()
+                        if word not in self.word_vocab:
+                            if pos[word_id] == "CD":
+                                word = "<CD>"
+                            elif pos[word_id] == "NNP":
+                                word = "<NNP>"
+                            else:
+                                word = "<UNK>"
+                        tag = pos[word_id]
+                        if tag not in self.pos_vocab:
+                            tag = "<UNK>"
+            else:
+                word = "<NULL>"
+                tag = "<NULL>"
+            repr[i] = self.word_vocab[word]
+            repr[i+6] = self.pos_vocab[tag]
+            if i < len(state.buffer):
+                word_id = state.buffer[-(i+1)]  
+                word = words[word_id]
+                if word is None:
+                    word = "<NULL>"
+                    tag = "<NULL>"
+                else:
+                    word = word.lower()
+                    if word not in self.word_vocab:
+                        if pos[word_id] == "CD":
+                            word = "<CD>"
+                        elif pos[word_id] == "NNP":
+                            word = "<NNP>"
+                        else:
+                            word = "<UNK>"
+                    tag = pos[word_id]
+                    if tag not in self.pos_vocab:
+                        tag = "<UNK>"
+            else:
+                word = "<NULL>"
+                tag = "<NULL>"
+            repr[i+3] = self.word_vocab[word]
+            repr[i+9] = self.pos_vocab[tag]
             ### END YOUR CODE ###
 
-        return rep
+        return repr
+    
 
     def get_target_repr(self, action):
         # action is a tuple of (transition, label)
@@ -95,21 +176,47 @@ def get_training_matrices(extractor, input_filename: str, n=np.inf) -> Tuple[Lis
     count = 0
     with open(input_filename, "r") as in_file:
         dtrees = list(conll_reader(in_file))
+    print(f"The length of dtree is {len(dtrees)} ")
+    
     for dtree in tqdm(dtrees, total=min(len(dtrees), n)):
         words = dtree.words()
         pos = dtree.pos()
-        for state, action in get_training_instances(dtree):
-
+        
+        # 验证words和pos的长度是否匹配
+        if len(words) != len(pos):
+            print(f"Warning : The length of words and pos do not match in the tree: {dtree}")
+            continue
+            
+        training_instances = list(get_training_instances(dtree))
+        
+        for state, action in training_instances:
             ### START YOUR CODE ###
-            # TODO: Call extractor.get_input_repr_*() and append the result to inputs
-            pass
+
+            # Train data for base model
+            # input_repr = extractor.get_input_repr_word(words, pos, state)
+            # if len(input_repr) != 6:  
+            #     print(f"Warning: expect 6 dim but get {len(input_repr)}")
+            #     continue
+            
+            # Train data for WordPos model
+            input_repr = extractor.get_input_repr_wordpos(words, pos, state)
+            if len(input_repr) != 12:  
+                print(f"Warning: expect 12 dim but get {len(input_repr)}")
+                continue
+                
+            inputs.append(input_repr)
             ### END YOUR CODE ###
 
             targets.append(extractor.get_target_repr(action))
+        
         count += 1
         if count >= n:
             break
-    return inputs, targets 
+    
+    inputs = np.array(inputs, dtype=np.float32)
+    targets = np.array(targets, dtype=np.int64)
+    
+    return inputs, targets
 
 
 if __name__ == "__main__":
@@ -129,7 +236,5 @@ if __name__ == "__main__":
     print("Starting feature extraction...")
 
     inputs, targets = get_training_matrices(extractor, input_file)
-    inputs = np.stack(inputs)
-    targets = np.stack(targets)
     np.save(args.output_data, inputs)
     np.save(args.output_target, targets)
