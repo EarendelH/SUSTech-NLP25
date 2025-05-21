@@ -2,3 +2,12 @@ Ass3/*.pth
 Ass4/glove.6B.100d.txt
 Ass4/*.pth
 Ass4/*.pt
+*/_MACOSX/*
+*.tar.gz
+*.DS_Store
+lab13/hh-rlhf/*
+Qwen2-0.5B
+lab10/bert-base-uncased/*
+lab11/gpt2zh/*
+lab12/llama-7b-tokenizer/*
+find_large_file.sh
