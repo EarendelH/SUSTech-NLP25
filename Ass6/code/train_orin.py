@@ -19,7 +19,7 @@ print(f'{len(batches_list)} batches loaded')
 # Initialize model, loss function, and optimizer
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = BERT().to(device)
-criterion = nn.CrossEntropyLoss()
+criterion = nn.CrossEntropyLoss() 
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 
@@ -35,38 +35,26 @@ for epoch in range(n_epochs):
         # Convert batch data to PyTorch tensors
         ### START YOUR CODE ###
         try:
-            input_ids_list_for_tensor = [instance[0] for instance in batch]
-            segment_ids_list_for_tensor = [instance[1] for instance in batch]
-            masked_tokens_list_for_tensor = [instance[2] for instance in batch]
-            masked_pos_list_for_tensor = [instance[3] for instance in batch]
-            is_next_list_for_tensor = [instance[4] for instance in batch]
-
-            input_ids = torch.LongTensor(input_ids_list_for_tensor)
-            segment_ids = torch.LongTensor(segment_ids_list_for_tensor)
-            masked_tokens = torch.LongTensor(masked_tokens_list_for_tensor)
-            masked_pos = torch.LongTensor(masked_pos_list_for_tensor)
-            is_next = torch.LongTensor(is_next_list_for_tensor) # Booleans will be converted to 0s and 1s
-
-        except ValueError as e:
+            input_ids, segment_ids, masked_tokens, masked_pos, is_next = None
+        except ValueError:
             print(f'batch[{i}] len: {len(batch[i])}')
             raise
         ### END YOUR CODE ###
 
-        input_ids, segment_ids, masked_tokens, masked_pos, is_next = map(lambda x: x.to(device),
+        input_ids, segment_ids, masked_tokens, masked_pos, is_next = map(lambda x: x.to(device), 
                                                                          [input_ids, segment_ids, masked_tokens, masked_pos, is_next])
 
         # Forward pass
         ### START YOUR CODE ###
         try:
-            logits_lm, logits_clsf = model(input_ids, segment_ids, masked_pos)
+            logits_lm, logits_clsf = None
         except Exception:
-            print(f'input_ids shape: {input_ids.shape if hasattr(input_ids, "shape") else "N/A"}')
+            print(f'input_ids: {input_ids}')
             raise
-        loss_lm = criterion(logits_lm.transpose(1, 2), masked_tokens)
+        loss_lm = None # loss for MLM task
         loss_lm = (loss_lm.float()).mean()
-
-        loss_clsf = criterion(logits_clsf, is_next)
-        loss = loss_lm + loss_clsf
+        loss_clsf = None # loss for NSP task
+        loss = None # total loss
         ### END YOUR CODE ###
 
         loss.backward()
@@ -86,4 +74,3 @@ for epoch in range(n_epochs):
 
 # Save model
 torch.save(model.state_dict(), 'bert_model.pt')
-print("Model saved to bert_model.pt")

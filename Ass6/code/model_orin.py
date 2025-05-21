@@ -1,3 +1,4 @@
+
 import torch
 import torch.nn as nn
 import math
@@ -36,7 +37,7 @@ class Embedding(nn.Module):
 
     def forward(self, x, seg):
         seq_len = x.size(1)
-        pos = torch.arange(seq_len, dtype=torch.long, device=x.device)
+        pos = torch.arange(seq_len, dtype=torch.long)
         pos = pos.unsqueeze(0).expand_as(x)  # (seq_len,) -> (batch_size, seq_len)
         embedding = self.tok_embed(x) + self.pos_embed(pos) + self.seg_embed(seg)
         return self.norm(embedding)
@@ -101,7 +102,7 @@ class PoswiseFeedForwardNet(nn.Module):
     def forward(self, x):
         # (batch_size, seq_len, d_model) -> (batch_size, seq_len, d_ff) -> (batch_size, seq_len, d_model)
         return self.fc2(gelu(self.fc1(x)))
-
+    
 
 class EncoderLayer(nn.Module):
     def __init__(self):
@@ -112,8 +113,8 @@ class EncoderLayer(nn.Module):
     def forward(self, enc_inputs, enc_self_attn_mask):
         ### START YOUR CODE ###
         # Call enc_self_attn and pos_ffn
-        enc_outputs, attn = self.enc_self_attn(enc_inputs, enc_self_attn_mask)
-        enc_outputs = self.pos_ffn(enc_outputs) 
+        enc_outputs, attn = None
+        enc_outputs = None
         ### END YOUR CODE ###
         return enc_outputs, attn
 
@@ -149,18 +150,17 @@ class BERT(nn.Module):
         # Use the representation of [CLS] to produce logits for NSP task
         # First, gather the representations of [CLS] token, then pass it to self.classifier
         ### START YOUR CODE ###
-        h_pooled = self.activ1(self.fc1(output[:, 0]))
-        logits_clsf = self.classifier(h_pooled)
+        h_pooled = None
+        logits_clsf = None
         ### END YOUR CODE ###
 
         # Gather the representations of masked tokens to produce logits for MLM task
         # Hint: use masked_pos to select masked tokens; use torch.gather to gather the representations
         ### START YOUR CODE ###
-        
-        masked_pos = masked_pos.unsqueeze(-1).expand(-1, -1, d_model) # Shape: [batch_size, max_pred_tokens, d_model]
-        h_masked = torch.gather(output, 1, masked_pos) # call torch.gather
-        h_masked = self.norm(self.activ2(self.fc2(h_masked))) # call fc2, activ2, norm in sequence
-        logits_lm = self.decoder(h_masked) + self.decoder_bias # do not forget decoder_bias
+        masked_pos = None # Some reshaping may be needed
+        h_masked = None # call torch.gather
+        h_masked = None # call fc2, activ2, norm in sequence
+        logits_lm = None # do not forget decoder_bias
         ### END YOUR CODE ###
 
         return logits_lm, logits_clsf

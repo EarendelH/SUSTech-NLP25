@@ -11,3 +11,5 @@ lab10/bert-base-uncased/*
 lab11/gpt2zh/*
 lab12/llama-7b-tokenizer/*
 find_large_file.sh
+Ass6/code/bert_model.pt
+Ass6/code/*.pkl
